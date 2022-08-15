@@ -20,7 +20,7 @@ def printBoundaryElem(A,r,c):
     #Lower side Boundary 
     if r>1 and c>1:
         for j in range(c-1,-1,-1):
-            print(A[c-1][j],end=" ")
+            print(A[r-1][j],end=" ")
     #Left Side Boundary 
     if r>1:
         for i in range(r-2,0,-1):
@@ -57,6 +57,12 @@ printBoundaryElem(A,r,c)
 r=3
 c=1
 A=[[1],[2],[3]]
+printorigMat(A,r,c)  
+printBoundaryElem(A,r,c)
+
+r=3
+c=2
+A=[[1,2],[3,4],[5,6]]
 printorigMat(A,r,c)  
 printBoundaryElem(A,r,c)
 
